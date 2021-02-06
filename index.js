@@ -25,8 +25,14 @@ client.on('message', message => {
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
     }
+    else if(command === 'cat'){
+        client.commands.get('cat').execute(message, args);
+    }
     else if(command === 'ban'){
         client.commands.get('ban').execute(message, args);
+    }
+    else if(command === 'kick'){
+        client.commands.get('kick').execute(message, args);
     }
 });
 
